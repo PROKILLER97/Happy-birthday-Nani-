@@ -12,6 +12,8 @@ canvas{
   z-index:10;
 }
 
+/* LEFT PHOTO */
+
 #photo-left{
   position:absolute;
   left:40px;
@@ -25,6 +27,8 @@ canvas{
   box-shadow:0 0 20px rgba(255,255,255,0.6);
   z-index:2;
 }
+
+/* RIGHT PHOTO */
 
 #photo-right{
   position:absolute;
@@ -40,6 +44,8 @@ canvas{
   z-index:2;
 }
 
+/* MESSAGE */
+
 #from-message{
   position:absolute;
   bottom:40px;
@@ -50,4 +56,27 @@ canvas{
   text-shadow:0 0 10px rgba(255,255,255,0.8);
   letter-spacing:1px;
   z-index:20;
+}
+
+/* MOBILE SCALING */
+
+@media (max-width:768px){
+
+  #photo-left{
+    left:10px;
+    width:110px;
+    height:150px;
+  }
+
+  #photo-right{
+    right:10px;
+    width:110px;
+    height:150px;
+  }
+
+  #from-message{
+    font-size:16px;
+    bottom:20px;
+  }
+
 }
