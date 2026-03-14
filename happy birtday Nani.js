@@ -8,7 +8,7 @@ opts = {
 
 strings: ["HAPPY","BIRTHDAY","प्यारी","नानी"],
 
-charSize: 30,
+charSize: 38,
 charSpacing: 35,
 lineHeight: 40,
 
