@@ -9,6 +9,24 @@
 
 <link rel="stylesheet" href="happy birtday.css">
 
+<style>
+#music-btn{
+  position:absolute;
+  bottom:40px;
+  left:50%;
+  transform:translateX(-50%);
+  padding:12px 22px;
+  font-size:18px;
+  border:none;
+  border-radius:30px;
+  background:#ff4d6d;
+  color:white;
+  cursor:pointer;
+  box-shadow:0 0 15px rgba(255,255,255,0.6);
+  z-index:30;
+}
+</style>
+
 </head>
 
 <body>
@@ -19,15 +37,16 @@
   <source src="birthday.mp3" type="audio/mpeg">
 </audio>
 
-<div id="from-message">
-From Jai, Pintu & Ashok ❤️
-</div>
+<button id="music-btn">🎵 Play Music</button>
 
 <script>
-document.body.addEventListener("click", () => {
-  const music = document.getElementById("music");
-  music.play().catch(()=>{});
-});
+const btn = document.getElementById("music-btn");
+const music = document.getElementById("music");
+
+btn.onclick = () => {
+  music.play();
+  btn.innerText = "🎶 Music Playing";
+};
 </script>
 
 <script src="happy birtday Nani.js"></script>
