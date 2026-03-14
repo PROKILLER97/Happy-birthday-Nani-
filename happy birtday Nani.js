@@ -13,7 +13,7 @@ let w = (c.width = window.innerWidth),
     cx: w / 2,
     cy: h / 2,
 
-    fireworkPrevPoints: 10,
+    fireworkPrevPoints: 2,
     fireworkBaseLineWidth: 5,
     fireworkAddedLineWidth: 8,
     fireworkSpawnTime: 200,
